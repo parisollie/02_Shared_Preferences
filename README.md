@@ -1,4 +1,4 @@
-# Shared Preferences
+# 03- Shared Preferences
 
 A new Android project.
 
@@ -8,8 +8,7 @@ This project is a starting point for a Android application.
 
 This application contains the following knowledge:
 
--Extension functions.
--Save and read files in Json and XML format
+-Shared Preferences
 
 ### The application looks like this:
 
