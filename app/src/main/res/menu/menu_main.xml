@@ -1,0 +1,69 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pjff.persistenciasp.MainActivity">
+    <!--
+    Paso 3,Ponemos el icono de la lupita
+    order in category= es para que tenga una prioridad mayor
+    ifroom = si hay espacio colocamelo en la barra y sino hay espacio
+    lo agrupo en los 3 puntitos
+-->
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="50"
+        android:title=""
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="50"
+        android:title=""
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom">
+
+
+        <menu>
+            <!--anidamos otro menu-->
+            <item
+                android:id="@+id/action_option1"
+                android:title="@string/opcion_1"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@+id/action_option2"
+                android:title="Opción 2"
+                app:showAsAction="ifRoom"/>
+        </menu>
+
+    </item>
+
+    <!--
+         Paso 1
+        "Evitar Hardcoding"
+
+         Le anidamos otro menu adentro
+         // De esta manera es harcodeado
+         android:title="Opción 1"
+         // De esta manera se arregla.
+          android:title="string/action_azul"
+
+          En el archivo de strings ponemos esto :
+
+          <string name="opcion_1">Opcion 1</string>
+         -->
+    <item
+        android:id="@+id/action_azul"
+        android:orderInCategory="100"
+        android:title="@string/action_azul"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rojo"
+        android:orderInCategory="100"
+        android:title="@string/action_rojo"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_verde"
+        android:orderInCategory="100"
+        android:title="@string/action_verde"
+        app:showAsAction="never" />
+</menu>

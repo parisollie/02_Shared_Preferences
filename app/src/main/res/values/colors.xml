@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Paso 2, creamos colores -->
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mi_azul">#20ADC3</color>
+    <color name="mi_rojo">#DE1010</color>
+    <color name="mi_verde">#34C925</color>
+    <color name="mi_gris">#FFA8AFA7</color>
+</resources>
